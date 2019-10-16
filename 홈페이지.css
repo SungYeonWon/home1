@@ -1,0 +1,180 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{margin: 0;
+padding: 0;}
+
+li{
+	list-style: none;
+}
+
+/*------------------------------------*/
+
+#all{
+	width: 1920px;
+	height: 935px;
+	
+}
+/*------------------------------------*/
+
+#logo{
+	float: left;
+	margin-right: 30px;
+	background: #424242;
+	width: 150px;
+	height: 80px;
+	margin-left: 20px;
+	margin-top: 10px;
+	color: #fff;
+	text-align: center;
+	font-size: 50px;
+	font-weight: 900;
+}
+
+
+/*------------------------------------*/
+
+
+#menu ul{
+	overflow: hidden;
+	width: 1920px;
+	margin-left: 400px;
+}
+
+#menu a{
+	text-decoration: none;
+	color: #000000;
+	margin: 30px;
+	padding: 10px 60px;
+	display: block;
+}
+
+#menu li{
+	float: left;
+}
+
+
+
+
+/*------------------------------------*/
+
+#slide{
+	
+	float: right;
+	width: 1950px;
+	height: 500px;
+	margin: 10px auto;
+	overflow: hidden;
+	position: relative;
+}
+
+input{
+	display: none;
+}
+
+
+section{
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 10px;
+	text-align: center;
+}
+
+label{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border-radius: 10px;
+	border: #666 2px solid;
+	background: #fff;
+	vertical-align: middle;
+	transition: 0.3s;
+}
+
+
+#tab1:checked ~ section label:nth-child(1) {
+	background: #666;
+}
+#tab2:checked ~ section label:nth-child(2) {
+	background: #666;
+}
+#tab3:checked ~ section label:nth-child(3) {
+	background: #666;
+}
+#tab4:checked ~ section label:nth-child(4) {
+	background: #666;
+}
+
+
+
+
+
+
+#slide ul{
+	width: 400%;
+	height: 100%;
+	transition: 1s;
+}
+
+#slide ul:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+
+
+#slide li{
+	float: left;
+	width: 25%;
+	height: 100%;
+}
+
+
+#slide li:nth-child(1) {background: #E92528;}
+#slide li:nth-child(2) {background: #003;}
+#slide li:nth-child(3) {background: #006;}
+#slide li:nth-child(4) {background: #2EB82D;}
+
+
+#tab1:checked ~ ul {margin-left: 0%;}
+#tab2:checked ~ ul {margin-left: -100%;}
+#tab3:checked ~ ul {margin-left: -200%;}
+#tab4:checked ~ ul {margin-left: -300%;}
+
+
+
+
+
+
+
+
+/*------------------------*/
+
+
+#menu2 ul{
+	overflow: hidden;
+	width: 1920px;
+	margin-left: 400px;
+}
+
+#menu2 a{
+	text-decoration: none;
+	color: #000000;
+	margin: 30px;
+	padding: 10px 60px;
+	display: block;
+}
+
+#menu2 li{
+	float: left;
+}
+
+
+h2{
+	margin-left: 200px;
+}
+
+p{border-bottom:#000000 2px double;}
+
